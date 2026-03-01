@@ -7,8 +7,9 @@ const Footer = () => {
         <div className="banner">
           {/* <div className="left"></div> */}
           <div className="right">
-            <p>Main road, Ranchi</p>
-            <p>Open: 05:00 PM - 12:00 AM</p>
+            <p> Hinoo Main Rd, Hinoo, Ranchi, Jharkhand 834002</p>
+          <p >Phone no- 092418 27877</p>
+            <p>Open: 08:00 AM - 11:00 PM</p>
           </div>
         </div>
         <div className="banner">
