@@ -37,6 +37,13 @@ const Navbar = () => {
               )
             ))}
           </div>
+          <Link
+            to="/menu"
+            className="mobileMenuBtnLink"
+            onClick={() => setShow(false)}
+          >
+            <button className="menuBtn mobileMenuBtn">OUR MENU</button>
+          </Link>
         </div>
         <Link to="/menu" className="menuBtnLink">
           <button className="menuBtn">OUR MENU</button>
