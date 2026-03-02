@@ -62,6 +62,12 @@
                 "image": "./dinner5.png",
                 "title": "GRILLED CHICKEN",
                 "category": "Dinner"
+            },
+            {
+                "id": 8,
+                "image": "./dinner6.png",
+                "title": "GRILLED STEAK",
+                "category": "Dinner"
             }
             
             
