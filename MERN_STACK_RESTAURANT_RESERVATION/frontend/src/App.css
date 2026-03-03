@@ -55,9 +55,21 @@ nav .navLinks .links a {
   font-weight: 400;
   letter-spacing: 1px;
   transition: 0.3s;
+  cursor: pointer;
 }
 
-nav .navLinks .links a:hover {
+nav .navLinks .links > * {
+  text-decoration: none;
+  color: #555;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+nav .navLinks .links a:hover,
+nav .navLinks .links > *:hover {
   color: #222;
 }
 
@@ -125,11 +137,14 @@ nav svg {
 
   nav {
     padding: 15px 20px;
+    overflow: visible;
   }
 
   nav .hamburger {
     display: flex;
     cursor: pointer;
+    z-index: 1000;
+    position: relative;
   }
 
   nav .navLinks {
@@ -147,10 +162,11 @@ nav svg {
     pointer-events: none;
   }
 
-  nav .showmenu {
+  nav .navLinks.showmenu {
     top: 100%;
     opacity: 1;
     pointer-events: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
   nav .navLinks .links {

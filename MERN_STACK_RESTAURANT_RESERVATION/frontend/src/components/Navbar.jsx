@@ -28,7 +28,8 @@ const Navbar = () => {
                 </ScrollLink>
               ) : (
                 <Link
-                  to={`/#${element.link}`}
+                  to="/"
+                  state={{ scrollTo: element.link }}
                   key={element.id}
                   onClick={() => setShow(false)}
                 >

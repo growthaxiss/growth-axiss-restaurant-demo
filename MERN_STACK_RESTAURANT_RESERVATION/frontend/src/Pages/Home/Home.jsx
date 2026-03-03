@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
+import { scroller } from 'react-scroll'
 import HeroSection from '../../components/HeroSection'
 import About from '../../components/About'
 import Qualities from '../../components/Qualities'
@@ -10,6 +12,21 @@ import Reservation from '../../components/Reservation'
 import Footer from '../../components/Footer'
 
 const Home = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollTo) {
+      // Scroll to the section after a small delay to ensure the page has rendered
+      setTimeout(() => {
+        scroller.scrollTo(location.state.scrollTo, {
+          duration: 500,
+          smooth: true,
+          offset: -70, // Adjust this value based on your navbar height
+        });
+      }, 100);
+    }
+  }, [location]);
+
   return (
     <>
       <HeroSection/>
