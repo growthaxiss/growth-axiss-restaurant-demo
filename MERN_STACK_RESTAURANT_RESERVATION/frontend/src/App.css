@@ -55,9 +55,21 @@ nav .navLinks .links a {
   font-weight: 400;
   letter-spacing: 1px;
   transition: 0.3s;
+  cursor: pointer;
 }
 
-nav .navLinks .links a:hover {
+nav .navLinks .links > * {
+  text-decoration: none;
+  color: #555;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+nav .navLinks .links a:hover,
+nav .navLinks .links > *:hover {
   color: #222;
 }
 
@@ -82,6 +94,11 @@ nav .menuBtnLink {
   text-decoration: none;
 }
 
+nav .mobileMenuBtnLink {
+  display: none;
+  text-decoration: none;
+}
+
 /* HAMBURGER */
 nav .hamburger {
   display: none;
@@ -91,35 +108,65 @@ nav svg {
   font-size: 1.75rem;
 }
 
+@media (max-width: 1240px) {
+  nav .logo {
+    font-size: 1.7rem;
+  }
+
+  nav .navLinks .links {
+    gap: 16px;
+  }
+
+  nav .navLinks .links a {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+
+  nav .menuBtn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
 /* ---------------------------
    RESPONSIVE SECTION
 ---------------------------- */
 
 /* Tablet */
-@media (max-width: 1100px) {
+@media (max-width: 1145px) {
 
   nav {
     padding: 15px 20px;
+    overflow: visible;
   }
 
   nav .hamburger {
     display: flex;
     cursor: pointer;
+    z-index: 1000;
+    position: relative;
   }
 
   nav .navLinks {
     position: absolute;
-    top: -100%;
+    top: calc(-100vh - 20px);
     left: 0;
+    right: 0;
     width: 100%;
     background: #fff;
     flex-direction: column;
     padding: 20px 0;
     transition: 0.3s ease-in-out;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
   }
 
-  nav .showmenu {
-    top: 70px;
+  nav .navLinks.showmenu {
+    top: 100%;
+    opacity: 1;
+    pointer-events: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
   nav .navLinks .links {
@@ -130,6 +177,21 @@ nav svg {
 
   nav .menuBtn {
     margin-top: 15px;
+  }
+
+  nav .menuBtnLink {
+    display: none;
+  }
+
+  nav .mobileMenuBtnLink {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  nav .mobileMenuBtn {
+    margin-top: 0;
   }
 }
 
