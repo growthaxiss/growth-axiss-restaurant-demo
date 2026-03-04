@@ -20,14 +20,14 @@ const data = {
     }
   ],
   dishes: [
-    { id: 1, image: "assets/dinner1.jpeg", title: "CHILLI GARLIC NOODLES", category: "Dinner" },
-    { id: 2, image: "assets/dinner2.png", title: "CRISPY HONEY CHILLI POTATO", category: "Snacks" },
-    { id: 3, image: "assets/breakfast1.png", title: "SCHEZWAN FRIED RICE", category: "Lunch" },
-    { id: 4, image: "assets/dinner3.png", title: "VEG MANCHURIAN", category: "Dinner" },
-    { id: 5, image: "assets/lunch1.png", title: "CHILLI CHICKEN", category: "Lunch" },
-    { id: 6, image: "assets/dinner4.png", title: "HOT & SOUR SOUP", category: "Dinner" },
-    { id: 7, image: "assets/dinner5.png", title: "KUNG PAO CHICKEN", category: "Dinner" },
-    { id: 8, image: "assets/dinner6.png", title: "DRAGON PRAWNS", category: "Dinner" }
+    { id: 1, image: "assets/street_noodles.jpg", title: "CHILLI GARLIC NOODLES", category: "Popular" },
+    { id: 2, image: "assets/street_potato.jpg", title: "CRISPY HONEY CHILLI POTATO", category: "Popular" },
+    { id: 3, image: "assets/street_friedrice.jpg", title: "SCHEZWAN FRIED RICE", category: "Popular" },
+    { id: 4, image: "assets/street_manchurian.jpg", title: "VEG MANCHURIAN", category: "Popular" },
+    { id: 5, image: "assets/street_lollipop.jpg", title: "CHILLI CHICKEN", category: "Popular" },
+    { id: 6, image: "assets/street_springroll.jpg", title: "HOT & SOUR SOUP", category: "Popular" },
+    { id: 7, image: "assets/street_dragon.jpg", title: "KUNG PAO CHICKEN", category: "Popular" },
+    { id: 8, image: "assets/street_paneer.jpg", title: "DRAGON PRAWNS", category: "Popular" }
   ],
   whoWeAre: [
     { id: 1, number: "1", title: "Flagship Restaurant" },
