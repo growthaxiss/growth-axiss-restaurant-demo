@@ -21,13 +21,13 @@ const data = {
   ],
   dishes: [
     { id: 1, image: "assets/street_noodles.jpg", title: "CHILLI GARLIC NOODLES", category: "Popular" },
-    { id: 2, image: "assets/street_potato.jpg", title: "CRISPY HONEY CHILLI POTATO", category: "Popular" },
+    { id: 2, image: "assets/honey_chilli_potato.jpg", title: "CRISPY HONEY CHILLI POTATO", category: "Popular" },
     { id: 3, image: "assets/street_friedrice.jpg", title: "SCHEZWAN FRIED RICE", category: "Popular" },
     { id: 4, image: "assets/street_manchurian.jpg", title: "VEG MANCHURIAN", category: "Popular" },
-    { id: 5, image: "assets/street_lollipop.jpg", title: "CHILLI CHICKEN", category: "Popular" },
-    { id: 6, image: "assets/street_springroll.jpg", title: "HOT & SOUR SOUP", category: "Popular" },
+    { id: 5, image: "assets/chilli_chicken.jpg", title: "FRIED CHICKEN", category: "Popular" },
+    { id: 6, image: "assets/corn-soup-green-bowl-wooden-table.jpg", title: "HOT & SOUR SOUP", category: "Popular" },
     { id: 7, image: "assets/street_dragon.jpg", title: "KUNG PAO CHICKEN", category: "Popular" },
-    { id: 8, image: "assets/street_paneer.jpg", title: "DRAGON PRAWNS", category: "Popular" }
+    { id: 8, image: "assets/chilli_chicken.jpg", title: "CHILI CHICKEN", category: "Popular" }
   ],
   whoWeAre: [
     { id: 1, number: "1", title: "Flagship Restaurant" },
@@ -37,10 +37,10 @@ const data = {
   ],
   coffees: [
     { id: 1, image: "assets/street_noodles.jpg", title: "Chilli Garlic Noodles", type: "Wok Tossed" },
-    { id: 2, image: "assets/street_potato.jpg", title: "Honey Chilli Potato", type: "Crispy" },
+    { id: 2, image: "assets/honey_chilli_potato.jpg", title: "Honey Chilli Potato", type: "Crispy" },
     { id: 3, image: "assets/street_friedrice.jpg", title: "Schezwan Fried Rice", type: "Spicy" },
     { id: 4, image: "assets/street_manchurian.jpg", title: "Veg Manchurian", type: "Street Favorite" },
-    { id: 5, image: "assets/street_lollipop.jpg", title: "Chicken Lollipop", type: "Non-Veg" },
+    { id: 5, image: "assets/chicken_lollipop.jpg", title: "Chicken Lollipop", type: "Non-Veg" },
     { id: 6, image: "assets/street_springroll.jpg", title: "Spring Roll Platter", type: "Crunchy" },
     { id: 7, image: "assets/street_dragon.jpg", title: "Dragon Chicken", type: "Fiery" },
     { id: 8, image: "assets/street_paneer.jpg", title: "Paneer Chilli", type: "Chef Special" }
